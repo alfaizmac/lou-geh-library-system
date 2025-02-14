@@ -5,19 +5,23 @@ if (isset($_POST['add_reader'])) {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $city = $_POST['city'];
-    $dob = $_POST['dob']; // Change the variable name if needed
+    $dob = $_POST['dob']; // Match the form input name
 
-    // Correct the SQL Query to use "date_of_birth" instead of "dob"
+    // Prepare SQL Query
     $query = "INSERT INTO readers (first_name, last_name, city, date_of_birth) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("ssss", $first_name, $last_name, $city, $dob);
 
     if ($stmt->execute()) {
-        echo "✅ New reader added successfully!";
+        // Redirect to prevent form resubmission and show success message
+        header("Location: ../readers.php?success=1");
+        exit();
     } else {
-        echo "❌ Error: " . $stmt->error;
+        // Redirect with error message
+        header("Location: ../readers.php?error=1");
+        exit();
     }
-    
+
     $stmt->close();
     $conn->close();
 }

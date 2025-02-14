@@ -1,0 +1,206 @@
+body {
+  background: #f4f5f9;
+}
+
+/* sidebar.css */
+.MainSideBar {
+  position: fixed;
+  z-index: 1000;
+}
+
+.sidebar {
+  width: 350px;
+  height: 100vh;
+  background-color: #f4f5f9;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: #c8c8c8;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.LogoText {
+  margin-top: -30px;
+}
+.sidebar-logo h2 {
+  font-family: "Inter", sans-serif;
+  color: #2a5ed4;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sidebar-logo p {
+  font-family: "Inter", sans-serif;
+  color: #2a5ed4;
+  font-size: 18px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.sidebar-nav {
+  width: 100%;
+}
+
+.sidebar-nav span {
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-right: 40px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+}
+
+.sidebar-nav button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 59px;
+  background-color: #ffffff;
+  color: #2a5ed4;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+  border: 1px solid #c8c8c8;
+  text-decoration: none;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-nav button:hover {
+  background-color: #e3e8f7;
+}
+
+.sidebar-nav button svg {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  fill: #2a5ed4;
+}
+
+/* readers.php css */
+.Buttons {
+  margin-left: 400px;
+}
+
+/* Custom Styling for Add Reader Button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+/* Center Modal Title */
+.modal-title {
+  font-weight: bold;
+}
+
+/* Custom Modal Body Padding */
+.modal-body {
+  padding: 20px;
+}
+
+/* Style Input Fields */
+.modal-body input {
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Submit Button Styling */
+.modal-body button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#alert-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Success and error colors */
+.alert-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.container-mt-4 {
+  margin-left: 380px;
+
+  width: calc(100% - 450px);
+}
+
+.container-mt-4 h2 {
+  margin-top: 50px;
+  color: #2a5ed4;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.custom-header {
+  background-color: #2a5ed4 !important;
+  color: white !important;
+}
+
+.TableSearchBar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #c8c8c8;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group input {
+  margin-right: 10px;
+}
+
+.input-group svg {
+  margin-bottom: 3px;
+}
+
+.table-responsive th {
+  background: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
