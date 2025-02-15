@@ -2,6 +2,10 @@ body {
   background: #f4f5f9;
 }
 
+html {
+  background: #f4f5f9;
+}
+
 /* sidebar.css */
 .MainSideBar {
   position: fixed;
@@ -164,6 +168,7 @@ body {
   margin-left: 380px;
 
   width: calc(100% - 450px);
+  background: #f4f5f9;
 }
 
 .container-mt-4 h2 {
@@ -203,4 +208,36 @@ body {
   background: #007bff;
   color: #fff;
   border: 1px solid #007bff;
+}
+
+/* books.php css */
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 20px;
+  background-color: rgba(0, 128, 0, 0.9); /* Green for success */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.custom-alert.error {
+  background-color: rgba(255, 0, 0, 0.9); /* Red for error */
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ButtonsTableP {
+  display: flex;
 }

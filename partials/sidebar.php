@@ -13,7 +13,7 @@
     <div class="MainSideBar">
   <div class="sidebar">
   <div class="sidebar-logo">
-    <img src="./img/LGlogo.png" alt="Lou Geh Library System" />
+    <img src="./assets/images/LGlogo.png" alt="Lou Geh Library System" />
     <div class="LogoText">
     <h2>LOU GEH</h2>
     <p>LIBRARY SYSTEM</p>
